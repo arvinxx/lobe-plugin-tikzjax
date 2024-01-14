@@ -2,7 +2,7 @@
   "$schema": "../node_modules/@lobehub/chat-plugin-sdk/schema.json",
   "api": [
     {
-      "url": "https://tikzjax.chat-plugin.lobehub.com/api/runner",
+      "url": "https://lobe-plugin-tikzjax.arvinx.com/api/runner",
       "name": "code2image",
       "description": "根据用户输入的代码，生成 svg 绘图",
       "parameters": {
@@ -17,7 +17,7 @@
       }
     }
   ],
-  "author": "LobeHub",
+  "author": "arvinxx",
   "createdAt": "2024-01-14",
   "identifier": "TikZJax",
   "meta": {
