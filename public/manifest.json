@@ -1,0 +1,31 @@
+{
+  "$schema": "../node_modules/@lobehub/chat-plugin-sdk/schema.json",
+  "api": [
+    {
+      "url": "http://localhost:3000/api/runner",
+      "name": "code2image",
+      "description": "根据用户输入的代码，生成 svg 绘图",
+      "parameters": {
+        "properties": {
+          "input": {
+            "type": "string"
+          }
+        },
+        "required": ["input"],
+        "type": "object"
+      }
+    }
+  ],
+  "author": "LobeHub",
+  "createdAt": "2023-09-03",
+  "gateway": "http://localhost:4000",
+  "identifier": "TikZJax",
+  "meta": {
+    "avatar": "📐",
+    "tags": ["latex", "svg", "visualization", "diagram", "math"],
+    "title": "TikZJax",
+    "description": "Convert LaTeX TikZ code into SVG images for crisp, scalable mathematical diagrams and visualizations."
+  },
+  "type": "markdown",
+  "version": "1"
+}

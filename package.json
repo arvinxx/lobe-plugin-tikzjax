@@ -1,0 +1,70 @@
+{
+  "name": "tikzjax",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Convert LaTeX TikZ code into SVG images for crisp, scalable mathematical diagrams and visualizations.",
+  "homepage": "https://github.com/lobehub/chat-plugin-template",
+  "repository": "https://github.com/lobehub/chat-plugin-template.git",
+  "scripts": {
+    "build": "vercel build",
+    "gateway": "tsx scripts/gateway.ts",
+    "lint": "eslint \"{src,api}/**/*.{js,jsx,ts,tsx}\" --fix",
+    "prepare": "husky install",
+    "prettier": "prettier -c --write \"**/**\"",
+    "release": "semantic-release",
+    "start": "vercel dev",
+    "type-check": "tsc --noEmit"
+  },
+  "lint-staged": {
+    "*.md": [
+      "remark --quiet --output --",
+      "prettier --write --no-error-on-unmatched-pattern"
+    ],
+    "*.json": [
+      "prettier --write --no-error-on-unmatched-pattern"
+    ],
+    "*.{js,jsx}": [
+      "prettier --write",
+      "stylelint --fix",
+      "eslint --fix"
+    ],
+    "*.{ts,tsx}": [
+      "prettier --parser=typescript --write",
+      "stylelint --fix",
+      "eslint --fix"
+    ]
+  },
+  "dependencies": {
+    "node-tikzjax": "^1.0.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18",
+    "@lobehub/chat-plugin-sdk": "^1",
+    "@lobehub/chat-plugins-gateway": "^1",
+    "@lobehub/lint": "latest",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/yargs": "^17.0.32",
+    "@vercel/node": "^2",
+    "commitlint": "^18",
+    "cors": "^2.8.5",
+    "cross-env": "^7",
+    "eslint": "^8",
+    "express": "^4.18.2",
+    "husky": "^8",
+    "lint-staged": "^15",
+    "prettier": "^3",
+    "remark": "^14",
+    "remark-cli": "^11",
+    "semantic-release": "^21",
+    "stylelint": "^15",
+    "tsx": "^4.7.0",
+    "typescript": "^5",
+    "vercel": "^28",
+    "yargs": "^17.7.2"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  }
+}
