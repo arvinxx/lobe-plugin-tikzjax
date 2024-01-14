@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "description": "Convert LaTeX TikZ code into SVG images for crisp, scalable mathematical diagrams and visualizations.",
-  "homepage": "https://github.com/lobehub/chat-plugin-template",
-  "repository": "https://github.com/lobehub/chat-plugin-template.git",
+  "homepage": "https://github.com/lobehub/chat-plugin-tikzjax",
+  "repository": "https://github.com/lobehub/chat-plugin-tikzjax.git",
   "scripts": {
     "build": "vercel build",
     "gateway": "tsx scripts/gateway.ts",
