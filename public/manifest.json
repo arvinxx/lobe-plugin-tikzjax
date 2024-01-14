@@ -2,7 +2,7 @@
   "$schema": "../node_modules/@lobehub/chat-plugin-sdk/schema.json",
   "api": [
     {
-      "url": "http://localhost:3000/api/runner",
+      "url": "https://tikzjax.chat-plugin.lobehub.com/api/runner",
       "name": "code2image",
       "description": "根据用户输入的代码，生成 svg 绘图",
       "parameters": {
@@ -17,8 +17,7 @@
     }
   ],
   "author": "LobeHub",
-  "createdAt": "2023-09-03",
-  "gateway": "http://localhost:4000",
+  "createdAt": "2024-01-14",
   "identifier": "TikZJax",
   "meta": {
     "avatar": "📐",
