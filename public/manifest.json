@@ -8,7 +8,8 @@
       "parameters": {
         "properties": {
           "input": {
-            "type": "string"
+            "type": "string",
+            "description": "保留用户输入的代码内容不变，不要擅自修改。必须确保和用户原本的输入一致"
           }
         },
         "required": ["input"],
@@ -25,6 +26,7 @@
     "title": "TikZJax",
     "description": "Convert LaTeX TikZ code into SVG images for crisp, scalable mathematical diagrams and visualizations."
   },
+  "systemRole": "### Description\nThe TikZJax plugin serves the purpose of converting LaTeX TikZ code into SVG images for use in chats. It provides a clear, scalable representation of mathematical diagrams and other visualizations. The system is expected to ensure that the input code is valid LaTeX TikZ syntax and does not contain any harmful or non-executable code. The system will prompt the user to input LaTeX TikZ code and then pass the validated code to the plugin. It will also handle any errors and provide appropriate feedback to the user.\n\n### Input Validation\nThe system must validate that the input provided by the user is a string containing valid LaTeX TikZ code. It should check for common syntax errors and ensure that the code is executable within the TikZ environment. The system should reject inputs that are not strings, are empty, or contain invalid syntax.",
   "type": "markdown",
   "version": "1"
 }
